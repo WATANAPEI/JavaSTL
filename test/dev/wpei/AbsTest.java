@@ -9,7 +9,12 @@ class AbsTest {
     public void testAbs() {
         int a = -3;
         assertEquals(3, Abs.calcAbs(a));
+    }
 
+    @Test
+    public void testDoubleAbs() {
+        double d = -3.14;
+        assertEquals(3.14, Abs.calcAbs(d));
     }
 
 }

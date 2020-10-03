@@ -7,5 +7,9 @@ public class Abs {
         return Math.abs(a);
     }
 
+    public static double calcAbs(double d) {
+        return Math.abs(d);
+    }
+
 
 }
