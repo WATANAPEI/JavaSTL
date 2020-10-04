@@ -23,6 +23,14 @@ class TrigonometricTest {
         double deg = 90;
         BigDecimal bd = new BigDecimal(Trigonometric.sinByDegree(deg));
         assertEquals(BigDecimal.ONE, bd);
+        assertEquals(BigDecimal.ONE,
+                new BigDecimal(Math.sin(Math.toRadians(deg))).round(new MathContext(1, RoundingMode.HALF_UP)));
+    }
+
+    @Test
+    public void testArcTan() {
+        double a = Math.atan2(1,1);
+        System.out.println(a);
     }
 
 }
