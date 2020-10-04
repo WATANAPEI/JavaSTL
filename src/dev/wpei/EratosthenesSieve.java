@@ -1,17 +1,11 @@
 package dev.wpei;
 
-import java.sql.PreparedStatement;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class EratosthenesSieve {
     List<Integer> primeList;
     int[] searchArray;
-    int upperBound;
 
     public EratosthenesSieve() {}
     public EratosthenesSieve(int upperBound) {
