@@ -2,15 +2,16 @@ package dev.wpei;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.List;
+
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.MatcherAssert.*;
 
 class PermutationTest {
     @Test
     public void testPermutationGenerate() {
         Permutation p = new Permutation();
-        p.generate("abc", "").stream()
-                .forEach(e->System.out.println(e));
-
+        List<String> result = p.generate("abc", "");
+        assertThat(result, contains("abc", "acb", "bac", "bca", "cab", "cba"));
     }
-
 }
