@@ -22,4 +22,8 @@ public class PopCount {
         return count;
 
     }
+
+    public static int count(int i) {
+        return Integer.bitCount(i);
+    }
 }
