@@ -39,6 +39,8 @@ class PopCountTest {
         System.out.println(Integer.toBinaryString(i));
         // count number of 1(true) bit
         System.out.println(Integer.bitCount(i));
+        // get digit from specified position
+        System.out.println((i & (1 << 1)) != 0 ? 1 : 0);
         // set 1 on specified digit
         System.out.println(Integer.toBinaryString(i | 1 << 3));
         // set 0 on specified digit
