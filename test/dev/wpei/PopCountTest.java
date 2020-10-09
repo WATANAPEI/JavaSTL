@@ -42,7 +42,7 @@ class PopCountTest {
         // set 1 on specified digit
         System.out.println(Integer.toBinaryString(i | 1 << 3));
         // set 0 on specified digit
-        System.out.println(Integer.toBinaryString(i | 0 << 0));
+        System.out.println(Integer.toBinaryString(i & ~(1 << 1)));
     }
 
 }
